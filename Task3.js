@@ -1,10 +1,8 @@
 //Task 1
-function sum(num) {
+function superSum(num) {
     if (num <= 0) return 0;
     if (num === 1) return (num) => num;
-
     let _arguments = [];
-
     function helper(...args) {
         _arguments = [..._arguments, ...args];
         if (_arguments.length >= num) {
@@ -16,7 +14,6 @@ function sum(num) {
     }
     return helper;
 }
-
 
 //Task 2
 function sumOfDigits(n) {
